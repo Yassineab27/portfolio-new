@@ -1,0 +1,78 @@
+@import "config";
+@import "components";
+
+// General styles
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Dosis", sans-serif;
+  line-height: 1.6;
+  background: $color-light;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $color-dark;
+}
+
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+
+img {
+  width: 100%;
+}
+
+// HEADER
+#header-home {
+  background: url("../images/hero.jpg") no-repeat center right / cover;
+  height: 100vh;
+  color: #fff;
+}
+
+// LOGO
+#logo {
+  width: 70px;
+  height: 70px;
+}
+
+// MAIN NAV
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+
+  ul {
+    display: flex;
+
+    li {
+      padding: 1rem 1.5rem;
+
+      a {
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        border-bottom: 3px solid transparent;
+        padding-bottom: 0.5rem;
+        transition: all 0.5s ease;
+
+        &:hover {
+          border-color: $color-main;
+        }
+
+        .current {
+          border-color: $color-main;
+        }
+      }
+    }
+  }
+}
