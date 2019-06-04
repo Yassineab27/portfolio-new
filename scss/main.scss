@@ -37,42 +37,52 @@ img {
   background: url("../images/hero.jpg") no-repeat center right / cover;
   height: 100vh;
   color: #fff;
-}
 
-// LOGO
-#logo {
-  width: 70px;
-  height: 70px;
-}
-
-// MAIN NAV
-#main-nav {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 1rem;
-
-  ul {
+  // MAIN NAV
+  #main-nav {
     display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
 
-    li {
-      padding: 1rem 1.5rem;
+    // LOGO
+    #logo {
+      width: 70px;
+      height: 70px;
+    }
 
-      a {
-        text-decoration: none;
-        color: #fff;
-        text-transform: uppercase;
-        border-bottom: 3px solid transparent;
-        padding-bottom: 0.5rem;
-        transition: all 0.5s ease;
+    ul {
+      display: flex;
 
-        &:hover {
-          border-color: $color-main;
+      li {
+        padding: 1rem 1.5rem;
+
+        a {
+          text-decoration: none;
+          color: #fff;
+          text-transform: uppercase;
+          border-bottom: 3px solid transparent;
+          padding-bottom: 0.5rem;
+          transition: all 0.5s ease;
+
+          &:hover {
+            border-color: $color-main;
+          }
         }
 
         .current {
-          border-color: $color-main;
+          color: $color-main;
         }
       }
+    }
+  }
+
+  .header-content {
+    text-align: center;
+    padding-top: 15%;
+
+    h1 {
+      font-size: 3.5rem;
+      line-height: 1.2;
     }
   }
 }

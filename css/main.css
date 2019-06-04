@@ -5,6 +5,45 @@
   overflow: hidden;
 }
 
+.btn-main, .btn-light, .btn-dark {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-main {
+  color: #333;
+  background: #ffbc00;
+}
+
+.btn-light {
+  color: #333;
+  background: #f4f4f4;
+}
+
+.btn-dark {
+  color: #f4f4f4;
+  background: #333;
+}
+
+button[class^="btn-"]:hover,
+a[class^="btn-"]:hover,
+input[class^="btn-"]:hover {
+  background: #ffbc00;
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -41,12 +80,7 @@ img {
   color: #fff;
 }
 
-#logo {
-  width: 70px;
-  height: 70px;
-}
-
-#main-nav {
+#header-home #main-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,17 +90,22 @@ img {
   padding-top: 1rem;
 }
 
-#main-nav ul {
+#header-home #main-nav #logo {
+  width: 70px;
+  height: 70px;
+}
+
+#header-home #main-nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#main-nav ul li {
+#header-home #main-nav ul li {
   padding: 1rem 1.5rem;
 }
 
-#main-nav ul li a {
+#header-home #main-nav ul li a {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
@@ -76,11 +115,21 @@ img {
   transition: all 0.5s ease;
 }
 
-#main-nav ul li a:hover {
+#header-home #main-nav ul li a:hover {
   border-color: #ffbc00;
 }
 
-#main-nav ul li a .current {
-  border-color: #ffbc00;
+#header-home #main-nav ul li .current {
+  color: #ffbc00;
+}
+
+#header-home .header-content {
+  text-align: center;
+  padding-top: 15%;
+}
+
+#header-home .header-content h1 {
+  font-size: 3.5rem;
+  line-height: 1.2;
 }
 /*# sourceMappingURL=main.css.map */
