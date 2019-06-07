@@ -22,12 +22,6 @@ a {
   color: $color-dark;
 }
 
-h2,
-h3,
-h4 {
-  text-transform: uppercase;
-}
-
 img {
   width: 100%;
 }
@@ -78,11 +72,16 @@ img {
 
   .header-content {
     text-align: center;
-    padding-top: 15%;
+    padding-top: 10%;
 
     h1 {
       font-size: 3.5rem;
       line-height: 1.2;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.486);
+    }
+
+    h2 {
+      margin-bottom: 1rem;
     }
   }
 }

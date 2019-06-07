@@ -36,7 +36,7 @@ input[class^="btn-"]:hover {
 }
 
 .lead {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin-bottom: 2rem;
 }
 
@@ -62,12 +62,6 @@ ul {
 a {
   text-decoration: none;
   color: #333;
-}
-
-h2,
-h3,
-h4 {
-  text-transform: uppercase;
 }
 
 img {
@@ -125,11 +119,16 @@ img {
 
 #header-home .header-content {
   text-align: center;
-  padding-top: 15%;
+  padding-top: 10%;
 }
 
 #header-home .header-content h1 {
   font-size: 3.5rem;
   line-height: 1.2;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.486);
+}
+
+#header-home .header-content h2 {
+  margin-bottom: 1rem;
 }
 /*# sourceMappingURL=main.css.map */
