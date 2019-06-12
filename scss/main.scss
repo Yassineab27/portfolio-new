@@ -85,3 +85,57 @@ img {
     }
   }
 }
+
+// HOME SECTION
+#home {
+  // Home section A
+  &-a {
+    .section-title {
+      color: $color-main;
+    }
+    .specials {
+      margin-top: 3rem;
+      display: grid;
+      grid-gap: 1rem;
+      grid-template-columns: repeat(2, 1fr);
+
+      .img {
+        padding-bottom: 0.5rem;
+      }
+    }
+  }
+
+  // Home section B
+  &-b {
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 2rem;
+
+      li {
+        line-height: 2;
+      }
+      &-title {
+        font-size: 1.5rem;
+      }
+
+      &-number {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+    }
+
+    div {
+      padding: 2.5rem 0;
+
+      &:nth-child(odd) {
+        background: $color-medium;
+      }
+
+      &:nth-child(even) {
+        background: $color-light;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.253);
+      }
+    }
+  }
+}
