@@ -1,7 +1,7 @@
 .container {
   max-width: $website-width;
-  padding: 0 1.5rem;
   margin: auto;
+  padding: 0 1.5rem;
   overflow: hidden;
 }
 
@@ -45,4 +45,9 @@ input[class^="btn-"]:hover {
 
 .text-center {
   text-align: center;
+}
+
+.svg {
+  height: 75px;
+  width: 75px;
 }
