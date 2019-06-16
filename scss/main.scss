@@ -143,3 +143,44 @@ img {
     }
   }
 }
+
+// FOOTER
+#main-footer {
+  background: $color-dark;
+  color: #fff;
+
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    height: 9rem;
+    align-items: center;
+
+    ul li {
+      margin: 0.7rem 0;
+
+      a {
+        color: $color-light;
+        border-bottom: dotted 2px transparent;
+        padding-bottom: 0.4rem;
+
+        &:hover {
+          border-color: $color-main;
+          text-shadow: 1px 1px 4px #ffbb00b4;
+        }
+      }
+    }
+
+    .social .fab {
+      margin-right: 1rem;
+      border: 2px $color-main solid;
+      padding: 0.5rem;
+      border-radius: 50%;
+      transition: all 0.5s ease;
+
+      &:hover {
+        background: $color-main;
+        color: $color-dark;
+      }
+    }
+  }
+}
