@@ -38,6 +38,44 @@ input[class^="btn-"]:hover {
   background: $color-main;
 }
 
+// MAIN NAV
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+
+  // LOGO
+  #logo {
+    width: 70px;
+    height: 70px;
+  }
+
+  ul {
+    display: flex;
+
+    li {
+      padding: 1rem 1.5rem;
+
+      a {
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        border-bottom: 3px solid transparent;
+        padding-bottom: 0.5rem;
+        transition: all 0.5s ease;
+
+        &:hover {
+          border-color: $color-main;
+        }
+      }
+
+      .current {
+        color: $color-main;
+      }
+    }
+  }
+}
+
 .lead {
   font-size: 1.2rem;
   margin-bottom: 2rem;
@@ -47,13 +85,14 @@ input[class^="btn-"]:hover {
   text-align: center;
 }
 
+// SPECIALIZE PART
+.icon-style {
+  font-size: 50px;
+  color: $color-main;
+}
+
 .icon-style-back-end {
   margin: 0.7rem;
   font-size: 150px;
   color: $color-second;
-}
-
-.icon-style {
-  font-size: 50px;
-  color: $color-main;
 }
