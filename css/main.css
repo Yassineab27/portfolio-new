@@ -59,6 +59,14 @@ input[class^="btn-"]:hover {
   background: #ffbc00;
 }
 
+.bottom-line {
+  height: 2px;
+  width: 3rem;
+  background: #ffbc00;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
 #main-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -122,6 +130,11 @@ input[class^="btn-"]:hover {
   color: #01617b;
 }
 
+.icon-style-dev {
+  font-size: 75px;
+  color: #01617b;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -174,10 +187,6 @@ img {
   color: #fff;
 }
 
-#home-a .section-title {
-  color: #ffbc00;
-}
-
 #home-a .specials {
   margin-top: 3rem;
   display: -ms-grid;
@@ -185,10 +194,6 @@ img {
   grid-gap: 1rem;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-}
-
-#home-a .specials .img {
-  padding-bottom: 0.5rem;
 }
 
 #home-a .specials h3 {
@@ -257,6 +262,39 @@ img {
   padding: 0.8rem;
   background: #ccc;
   border-radius: 10px;
+}
+
+#about-b {
+  background: #333;
+  color: #f4f4f4;
+  margin: 2rem 0;
+}
+
+#about-b .progress-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#about-b .progress-container .progress {
+  overflow: hidden;
+  background: #ccc;
+  border-radius: 5px;
+  margin-bottom: 0.6rem;
+}
+
+#about-b .progress-container .progress div {
+  color: #fff;
+  text-align: center;
+  background: #ffbc00;
+}
+
+#about-c .about-logos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1rem;
+  text-align: center;
 }
 
 #main-footer {

@@ -38,6 +38,14 @@ input[class^="btn-"]:hover {
   background: $color-main;
 }
 
+.bottom-line {
+  height: 2px;
+  width: 3rem;
+  background: $color-main;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
 // MAIN NAV
 #main-nav {
   display: flex;
@@ -94,5 +102,11 @@ input[class^="btn-"]:hover {
 .icon-style-back-end {
   margin: 0.7rem;
   font-size: 150px;
+  color: $color-second;
+}
+
+// About Icons
+.icon-style-dev {
+  font-size: 75px;
   color: $color-second;
 }

@@ -60,18 +60,11 @@ img {
 #home {
   // Home section A
   &-a {
-    .section-title {
-      color: $color-main;
-    }
     .specials {
       margin-top: 3rem;
       display: grid;
       grid-gap: 1rem;
       grid-template-columns: repeat(2, 1fr);
-
-      .img {
-        padding-bottom: 0.5rem;
-      }
 
       h3 {
         color: $color-main;
@@ -137,6 +130,38 @@ img {
     padding: 0.8rem;
     background: $color-medium;
     border-radius: 10px;
+  }
+}
+
+#about-b {
+  background: $color-dark;
+  color: $color-light;
+  margin: 2rem 0;
+
+  .progress-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    .progress {
+      overflow: hidden;
+      background: $color-medium;
+      border-radius: 5px;
+      margin-bottom: 0.6rem;
+
+      div {
+        color: #fff;
+        text-align: center;
+        background: $color-main;
+      }
+    }
+  }
+}
+
+#about-c {
+  .about-logos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1rem;
+    text-align: center;
   }
 }
 
