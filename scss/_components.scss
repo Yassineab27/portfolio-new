@@ -9,9 +9,13 @@
 %btn-shared {
   display: inline-block;
   padding: 0.8rem 1.5rem;
-  transition: all 0.5s ease;
   border: none;
   cursor: pointer;
+  transition: all 0.5s ease;
+
+  &:hover {
+    background: $color-main;
+  }
 }
 
 .btn-main {
@@ -32,15 +36,9 @@
   background: $color-dark;
 }
 
-button[class^="btn-"]:hover,
-a[class^="btn-"]:hover,
-input[class^="btn-"]:hover {
-  background: $color-main;
-}
-
 .bottom-line {
   height: 2px;
-  width: 3rem;
+  width: 4rem;
   background: $color-main;
   display: block;
   margin: 0 auto 1rem auto;
@@ -53,7 +51,7 @@ input[class^="btn-"]:hover {
   padding-top: 1rem;
 
   // LOGO
-  #logo {
+  .logo {
     width: 70px;
     height: 70px;
   }
@@ -84,7 +82,7 @@ input[class^="btn-"]:hover {
   }
 }
 
-.lead {
+.text {
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
@@ -105,8 +103,9 @@ input[class^="btn-"]:hover {
   color: $color-second;
 }
 
-// About Icons
+// technologies Icons
 .icon-style-dev {
+  margin: 0.7rem 0.4rem 0 0.4rem;
   font-size: 75px;
   color: #01607b7e;
 }

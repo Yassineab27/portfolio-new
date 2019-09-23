@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "sass": "node-sass ./scss/main.scss ./css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yassineab27/portfolio-new.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yassineab27/portfolio-new/issues"
+  },
+  "homepage": "https://github.com/Yassineab27/portfolio-new#readme",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
+}

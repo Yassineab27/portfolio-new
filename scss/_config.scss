@@ -6,7 +6,7 @@ $color-second-light: #0890b6;
 $color-second-med: #047fa1;
 $color-light: #f4f4f4;
 $color-dark: #333;
-$color-medium: #ccc;
+$color-grey: #ccc;
 
 // PADDING
 .py-1 {
@@ -28,4 +28,13 @@ $color-medium: #ccc;
 }
 .my-3 {
   padding: 3rem 0;
+}
+
+// text color
+.text-main {
+  color: $color-main;
+}
+
+.text-dark {
+  color: $color-dark;
 }

@@ -31,7 +31,7 @@ img {
   background: url("../images/img-1.jpg") no-repeat center right / cover;
   height: 100vh;
   color: #fff;
-
+  // HERE GOES MAIN NAV COMPONENT
   .header-content {
     text-align: center;
     padding-top: 10%;
@@ -48,66 +48,58 @@ img {
   }
 }
 
-// For the ABOUT page
-#header-inner {
+// HOME SECTIONS
+// section A
+.home-a {
+  text-align: center;
+  padding: 3rem 0;
+
+  .specials {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2rem;
+    grid-gap: 1rem;
+
+    h3 {
+      color: $color-main;
+    }
+  }
+}
+
+// section B
+.home-b {
+  text-align: center;
+  padding: 3rem 0;
+  background: $color-grey;
+
+  .used-technologies {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 2rem 0.5rem 0 0.5rem;
+  }
+}
+
+// section C
+.home-c {
+  text-align: center;
+  padding: 3rem 0;
+
+  .work {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 2rem 0.5rem 0 0.5rem;
+  }
+}
+
+// ABOUT SECTONS
+#navbar-about {
   background: url("../images/img-1.jpg") no-repeat center top / cover;
   height: 5.5rem;
   border-bottom: 3px solid $color-main;
   color: #fff;
 }
 
-// HOME SECTION
-#home {
-  // Home section A
-  &-a {
-    .specials {
-      margin-top: 3rem;
-      display: grid;
-      grid-gap: 1rem;
-      grid-template-columns: repeat(2, 1fr);
-
-      h3 {
-        color: $color-main;
-      }
-    }
-  }
-
-  // Home section B
-  &-b {
-    .stats {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-gap: 2rem;
-
-      li {
-        line-height: 2;
-      }
-      &-title {
-        font-size: 1.5rem;
-      }
-
-      &-number {
-        font-size: 1.5rem;
-        font-weight: bold;
-      }
-    }
-
-    div {
-      padding: 2.5rem 0;
-
-      &:nth-child(odd) {
-        background: $color-medium;
-      }
-
-      &:nth-child(even) {
-        background: $color-light;
-        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.253);
-      }
-    }
-  }
-}
-
-// ABOUT SECTONS
 #about-a {
   .about-info {
     display: grid;
@@ -128,7 +120,7 @@ img {
     border-left: 3px solid $color-main;
     border-right: 3px solid $color-second;
     padding: 0.8rem;
-    background: $color-medium;
+    background: $color-grey;
     border-radius: 10px;
   }
 }
@@ -143,7 +135,7 @@ img {
     margin: 0 auto;
     .progress {
       overflow: hidden;
-      background: $color-medium;
+      background: $color-grey;
       border-radius: 5px;
       margin-bottom: 0.6rem;
 
