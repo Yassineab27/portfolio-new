@@ -27,9 +27,10 @@ img {
 }
 
 // HEADER
-#header-home {
+.header-home {
   background: url("../images/img-1.jpg") no-repeat center right / cover;
   height: 100vh;
+
   color: #fff;
   // HERE GOES MAIN NAV COMPONENT
   .header-content {
@@ -93,68 +94,88 @@ img {
 }
 
 // ABOUT SECTONS
-#navbar-about {
+.navbar-about {
   background: url("../images/img-1.jpg") no-repeat center top / cover;
   height: 5.5rem;
   border-bottom: 3px solid $color-main;
   color: #fff;
 }
 
-#about-a {
+.about {
+  text-align: center;
+  margin: 3rem 0;
+
   .about-info {
     display: grid;
-    grid-template-areas: "bioimage bio bio";
+    grid-template-columns: 1fr 2fr;
     grid-gap: 1.2rem;
     margin-bottom: 1rem;
-  }
 
-  // Grid Area
-  .bio-image {
-    grid-area: bioimage;
-    border-radius: 10px;
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.466);
-  }
+    .bio-image {
+      border-radius: 10px;
+      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.466);
+    }
 
-  .bio {
-    grid-area: bio;
-    border-left: 3px solid $color-main;
-    border-right: 3px solid $color-second;
-    padding: 0.8rem;
-    background: $color-grey;
-    border-radius: 10px;
-  }
-}
-
-#about-b {
-  background: $color-dark;
-  color: $color-light;
-  margin: 2rem 0;
-
-  .progress-container {
-    max-width: 1000px;
-    margin: 0 auto;
-    .progress {
-      overflow: hidden;
+    .bio {
       background: $color-grey;
-      border-radius: 5px;
-      margin-bottom: 0.6rem;
-
-      div {
-        color: #fff;
-        text-align: center;
-        background: $color-main;
-      }
+      padding: 0.8rem;
+      border-radius: 10px;
+      border-left: 3px solid $color-main;
+      border-right: 3px solid $color-second;
     }
   }
 }
 
-#about-c {
-  .about-logos {
+// WORK
+.work {
+  text-align: center;
+  margin: 3rem 0;
+
+  .gallery {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
-    text-align: center;
-    margin-bottom: 1rem;
+
+    .project {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      // background: #fff;
+      // padding: 1.5rem;
+      // border-radius: 15px;
+      h4 {
+        margin-bottom: 1rem;
+      }
+
+      .project-info {
+        position: absolute;
+        top: 70px;
+        left: 150px;
+        display: none;
+      }
+
+      .image-container {
+        overflow: hidden;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.404);
+
+        img {
+          height: 100%;
+          cursor: pointer;
+          transition: 1s all ease;
+        }
+      }
+
+      &:hover {
+        img {
+          opacity: 0.2;
+          transform: scale(1.2);
+        }
+
+        .project-info {
+          display: block;
+        }
+      }
+    }
   }
 }
 

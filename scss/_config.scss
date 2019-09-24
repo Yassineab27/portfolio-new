@@ -7,6 +7,7 @@ $color-second-med: #047fa1;
 $color-light: #f4f4f4;
 $color-dark: #333;
 $color-grey: #ccc;
+$color-danger: #d10700;
 
 // PADDING
 .py-1 {
@@ -37,4 +38,12 @@ $color-grey: #ccc;
 
 .text-dark {
   color: $color-dark;
+}
+
+.text-light {
+  color: $color-light;
+}
+
+.text-danger {
+  color: $color-danger;
 }
