@@ -34,14 +34,12 @@
   padding: 0 1.5rem;
   overflow: hidden; }
 
-.btn-main, .btn-light, .btn-dark {
+.btn-main, .btn-light, .btn-dark, .btn-danger {
   display: inline-block;
   padding: 0.8rem 1.5rem;
   border: none;
   cursor: pointer;
   transition: all 0.5s ease; }
-  .btn-main:hover, .btn-light:hover, .btn-dark:hover {
-    background: #ffbc00; }
 
 .btn-main {
   color: #333;
@@ -50,10 +48,22 @@
 .btn-light {
   color: #333;
   background: #f4f4f4; }
+  .btn-light:hover {
+    background: #ffbc00; }
 
 .btn-dark {
   color: #f4f4f4;
   background: #333; }
+
+.btn-danger {
+  color: #f4f4f4;
+  background: #d10700; }
+
+.btn-small {
+  padding: 0.4rem 0.8rem; }
+  .btn-small:hover {
+    opacity: 0.8;
+    border-radius: 15px; }
 
 .bottom-line {
   height: 2px;
@@ -89,6 +99,9 @@
   font-size: 1.2rem;
   margin-bottom: 2rem; }
 
+.bold {
+  font-weight: bold; }
+
 .text-center {
   text-align: center; }
 
@@ -105,6 +118,34 @@
   margin: 0.7rem 0.4rem 0 0.4rem;
   font-size: 75px;
   color: #01607b7e; }
+
+.project {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 1rem; }
+  .project .image-container {
+    height: 325px;
+    overflow: hidden;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.404); }
+    .project .image-container img {
+      height: 100%;
+      cursor: pointer;
+      transition: 1s all ease; }
+  .project .project-info {
+    position: absolute;
+    top: 10px;
+    left: 150px;
+    display: none; }
+    .project .project-info .app-features {
+      font-size: 0.8rem; }
+    .project .project-info .project-buttons {
+      margin-top: 1rem; }
+  .project:hover img {
+    opacity: 0.2;
+    transform: scale(1.2); }
+  .project:hover .project-info {
+    display: block; }
 
 * {
   margin: 0;
@@ -199,29 +240,6 @@ img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem; }
-    .work .gallery .project {
-      display: flex;
-      flex-direction: column;
-      position: relative; }
-      .work .gallery .project h4 {
-        margin-bottom: 1rem; }
-      .work .gallery .project .project-info {
-        position: absolute;
-        top: 70px;
-        left: 150px;
-        display: none; }
-      .work .gallery .project .image-container {
-        overflow: hidden;
-        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.404); }
-        .work .gallery .project .image-container img {
-          height: 100%;
-          cursor: pointer;
-          transition: 1s all ease; }
-      .work .gallery .project:hover img {
-        opacity: 0.2;
-        transform: scale(1.2); }
-      .work .gallery .project:hover .project-info {
-        display: block; }
 
 #main-footer {
   background: #333;

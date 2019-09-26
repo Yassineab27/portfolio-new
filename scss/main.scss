@@ -135,47 +135,6 @@ img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
-
-    .project {
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      // background: #fff;
-      // padding: 1.5rem;
-      // border-radius: 15px;
-      h4 {
-        margin-bottom: 1rem;
-      }
-
-      .project-info {
-        position: absolute;
-        top: 70px;
-        left: 150px;
-        display: none;
-      }
-
-      .image-container {
-        overflow: hidden;
-        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.404);
-
-        img {
-          height: 100%;
-          cursor: pointer;
-          transition: 1s all ease;
-        }
-      }
-
-      &:hover {
-        img {
-          opacity: 0.2;
-          transform: scale(1.2);
-        }
-
-        .project-info {
-          display: block;
-        }
-      }
-    }
   }
 }
 

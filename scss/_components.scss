@@ -12,10 +12,6 @@
   border: none;
   cursor: pointer;
   transition: all 0.5s ease;
-
-  &:hover {
-    background: $color-main;
-  }
 }
 
 .btn-main {
@@ -28,12 +24,31 @@
   @extend %btn-shared;
   color: #333;
   background: $color-light;
+
+  &:hover {
+    background: $color-main;
+  }
 }
 
 .btn-dark {
   @extend %btn-shared;
-  color: #f4f4f4;
+  color: $color-light;
   background: $color-dark;
+}
+
+.btn-danger {
+  @extend %btn-shared;
+  color: $color-light;
+  background: $color-danger;
+}
+
+.btn-small {
+  padding: 0.4rem 0.8rem;
+
+  &:hover {
+    opacity: 0.8;
+    border-radius: 15px;
+  }
 }
 
 .bottom-line {
@@ -87,6 +102,10 @@
   margin-bottom: 2rem;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .text-center {
   text-align: center;
 }
@@ -108,4 +127,50 @@
   margin: 0.7rem 0.4rem 0 0.4rem;
   font-size: 75px;
   color: #01607b7e;
+}
+
+// WORK PROJECT DISPLAY
+.project {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 1rem;
+
+  .image-container {
+    height: 325px;
+    overflow: hidden;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.404);
+
+    img {
+      height: 100%;
+      cursor: pointer;
+      transition: 1s all ease;
+    }
+  }
+
+  .project-info {
+    position: absolute;
+    top: 10px;
+    left: 150px;
+    display: none;
+
+    .app-features {
+      font-size: 0.8rem;
+    }
+
+    .project-buttons {
+      margin-top: 1rem;
+    }
+  }
+
+  &:hover {
+    img {
+      opacity: 0.2;
+      transform: scale(1.2);
+    }
+
+    .project-info {
+      display: block;
+    }
+  }
 }
