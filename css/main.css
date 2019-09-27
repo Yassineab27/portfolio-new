@@ -47,7 +47,8 @@
 
 .btn-light {
   color: #333;
-  background: #f4f4f4; }
+  background: #f4f4f4;
+  border: 1px solid #ffbc00; }
   .btn-light:hover {
     background: #ffbc00; }
 
@@ -122,6 +123,8 @@
 .project {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: relative;
   margin-bottom: 1rem; }
   .project .image-container {
@@ -134,8 +137,6 @@
       transition: 1s all ease; }
   .project .project-info {
     position: absolute;
-    top: 10px;
-    left: 150px;
     display: none; }
     .project .project-info .app-features {
       font-size: 0.8rem; }
@@ -204,10 +205,11 @@ img {
 .home-c {
   text-align: center;
   padding: 3rem 0; }
-  .home-c .work {
+  .home-c .home-work {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin: 2rem 0.5rem 0 0.5rem; }
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    margin: 2rem 0.5rem; }
 
 .navbar-about {
   background: url("../images/img-1.jpg") no-repeat center top/cover;
@@ -239,7 +241,7 @@ img {
   .work .gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1rem; }
+    grid-gap: 2rem; }
 
 #main-footer {
   background: #333;

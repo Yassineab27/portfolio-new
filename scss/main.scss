@@ -86,10 +86,11 @@ img {
   text-align: center;
   padding: 3rem 0;
 
-  .work {
+  .home-work {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin: 2rem 0.5rem 0 0.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    margin: 2rem 0.5rem;
   }
 }
 
@@ -134,7 +135,7 @@ img {
   .gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1rem;
+    grid-gap: 2rem;
   }
 }
 

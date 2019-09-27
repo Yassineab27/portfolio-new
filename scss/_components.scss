@@ -24,6 +24,7 @@
   @extend %btn-shared;
   color: #333;
   background: $color-light;
+  border: 1px solid $color-main;
 
   &:hover {
     background: $color-main;
@@ -133,6 +134,8 @@
 .project {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: relative;
   margin-bottom: 1rem;
 
@@ -150,8 +153,6 @@
 
   .project-info {
     position: absolute;
-    top: 10px;
-    left: 150px;
     display: none;
 
     .app-features {
