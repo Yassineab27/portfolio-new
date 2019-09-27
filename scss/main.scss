@@ -145,10 +145,11 @@ img {
   color: #fff;
 
   .footer-content {
-    display: flex;
-    justify-content: space-around;
-    height: 9rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
     align-items: center;
+    height: 9rem;
 
     ul li {
       margin: 0.7rem 0;
@@ -169,6 +170,7 @@ img {
     .social .fab {
       margin-right: 1rem;
       border: 2px $color-main solid;
+      color: $color-light;
       padding: 0.5rem;
       border-radius: 50%;
       transition: all 0.5s ease;

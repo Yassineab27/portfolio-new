@@ -76,6 +76,7 @@
 .main-nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-top: 1rem; }
   .main-nav .logo {
     width: 70px;
@@ -247,10 +248,11 @@ img {
   background: #333;
   color: #fff; }
   #main-footer .footer-content {
-    display: flex;
-    justify-content: space-around;
-    height: 9rem;
-    align-items: center; }
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    height: 9rem; }
     #main-footer .footer-content ul li {
       margin: 0.7rem 0; }
       #main-footer .footer-content ul li a {
@@ -264,6 +266,7 @@ img {
     #main-footer .footer-content .social .fab {
       margin-right: 1rem;
       border: 2px #ffbc00 solid;
+      color: #f4f4f4;
       padding: 0.5rem;
       border-radius: 50%;
       transition: all 0.5s ease; }
