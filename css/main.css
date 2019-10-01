@@ -294,12 +294,13 @@ img {
   .about .about-info {
     display: grid;
     grid-template-columns: 1fr;
-    justify-content: center;
-    margin-bottom: 0.5rem; }
+    justify-content: center; }
     .about .about-info .bio-image {
       height: 250px;
       width: 350px;
       margin: 0 auto; }
+    .about .about-info .bio {
+      margin-bottom: 0.5rem; }
   .work .gallery {
     grid-template-columns: 1fr; }
   #main-footer .footer-content {
@@ -315,5 +316,5 @@ img {
   .header-home .header-content h1 {
     font-size: 1.8rem; }
   .header-home .header-content h2 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 7rem; } }
