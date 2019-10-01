@@ -8,13 +8,13 @@
   padding: 3rem 0; }
 
 .my-1 {
-  padding: 1rem 0; }
+  margin: 1rem 0; }
 
 .my-2 {
-  padding: 2rem 0; }
+  margin: 2rem 0; }
 
 .my-3 {
-  padding: 3rem 0; }
+  margin: 3rem 0; }
 
 .text-main {
   color: #ffbc00; }
@@ -212,7 +212,7 @@ img {
     grid-gap: 1rem;
     margin: 2rem 0.5rem; }
 
-.navbar-about {
+.navbar-header {
   background: url("../images/img-1.jpg") no-repeat center top/cover;
   height: 5.5rem;
   border-bottom: 3px solid #ffbc00;
@@ -220,12 +220,13 @@ img {
 
 .about {
   text-align: center;
-  margin: 3rem 0; }
+  height: 100vh; }
+  .about h2 {
+    margin-top: 2rem; }
   .about .about-info {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-gap: 1.2rem;
-    margin-bottom: 1rem; }
+    grid-gap: 1.2rem; }
     .about .about-info .bio-image {
       border-radius: 10px;
       box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.466); }
@@ -273,3 +274,45 @@ img {
       #main-footer .footer-content .social .fab:hover {
         background: #ffbc00;
         color: #333; }
+
+@media (max-width: 900px) {
+  .main-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem; }
+    .main-nav ul {
+      display: flex;
+      justify-content: center; }
+  .home-a .specials {
+    grid-template-columns: 1fr; }
+  .home-c .home-work {
+    grid-template-columns: 1fr; }
+  .navbar-header {
+    height: 12.5rem; }
+  .about .about-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center; }
+    .about .about-info .bio-image {
+      height: 250px;
+      width: 350px;
+      margin: 0 auto; }
+  .work .gallery {
+    grid-template-columns: 1fr; }
+  #main-footer .footer-content {
+    grid-template-columns: 1fr;
+    height: 25rem; }
+    #main-footer .footer-content .footer-options,
+    #main-footer .footer-content .footer-contact,
+    #main-footer .footer-content .social,
+    #main-footer .footer-content .copyright {
+      text-align: center; } }
+
+@media (max-width: 500px) {
+  .header-home .header-content h1 {
+    font-size: 1.8rem; }
+  .header-home .header-content h2 {
+    font-size: 1.2rem;
+    margin-bottom: 7rem; } }

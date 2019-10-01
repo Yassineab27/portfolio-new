@@ -95,7 +95,7 @@ img {
 }
 
 // ABOUT SECTONS
-.navbar-about {
+.navbar-header {
   background: url("../images/img-1.jpg") no-repeat center top / cover;
   height: 5.5rem;
   border-bottom: 3px solid $color-main;
@@ -104,13 +104,16 @@ img {
 
 .about {
   text-align: center;
-  margin: 3rem 0;
+  height: 100vh;
+
+  h2 {
+    margin-top: 2rem;
+  }
 
   .about-info {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-gap: 1.2rem;
-    margin-bottom: 1rem;
 
     .bio-image {
       border-radius: 10px;
@@ -178,6 +181,105 @@ img {
       &:hover {
         background: $color-main;
         color: $color-dark;
+      }
+    }
+  }
+}
+
+// RESPONSIVNESS
+@media (max-width: 900px) {
+  // =====================================================
+  //               HOME PAGE
+  // =====================================================
+  // navbar
+  .main-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+
+    // OPTIONS
+    ul {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  // SECTION SPECIALIZE
+  .home-a {
+    .specials {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  // SECTION WORK
+  .home-c {
+    .home-work {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  // NAVBAR HEADER FOR ABOUT AND WORK PAGES
+  .navbar-header {
+    height: 12.5rem;
+  }
+
+  // =====================================================
+  //               ABOUT PAGE
+  // =====================================================
+  .about {
+    .about-info {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-content: center;
+
+      .bio-image {
+        height: 250px;
+        width: 350px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  // =====================================================
+  //               WORK PAGE
+  // =====================================================
+  .work {
+    .gallery {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  // FOOTER
+  #main-footer {
+    .footer-content {
+      grid-template-columns: 1fr;
+      height: 25rem;
+
+      .footer-options,
+      .footer-contact,
+      .social,
+      .copyright {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  // =====================================================
+  //               HOME PAGE
+  // =====================================================
+  // HEADER HOME
+  .header-home {
+    .header-content {
+      h1 {
+        font-size: 1.8rem;
+      }
+      h2 {
+        font-size: 1.2rem;
+        margin-bottom: 7rem;
       }
     }
   }
