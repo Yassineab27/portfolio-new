@@ -294,7 +294,8 @@ img {
   .about .about-info {
     display: grid;
     grid-template-columns: 1fr;
-    justify-content: center; }
+    justify-content: center;
+    margin-bottom: 0.5rem; }
     .about .about-info .bio-image {
       height: 250px;
       width: 350px;
