@@ -112,13 +112,8 @@ img {
 
   .about-info {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 1fr;
     grid-gap: 1.2rem;
-
-    .bio-image {
-      border-radius: 10px;
-      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.466);
-    }
 
     .bio {
       background: $color-grey;
@@ -126,6 +121,11 @@ img {
       border-radius: 10px;
       border-left: 3px solid $color-main;
       border-right: 3px solid $color-second;
+    }
+
+    .bio-image {
+      border-radius: 10px;
+      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.466);
     }
   }
 }
@@ -238,10 +238,6 @@ img {
         height: 250px;
         width: 350px;
         margin: 0 auto;
-      }
-
-      .bio {
-        margin-bottom: 0.5rem;
       }
     }
   }

@@ -225,17 +225,17 @@ img {
     margin-top: 2rem; }
   .about .about-info {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 1fr;
     grid-gap: 1.2rem; }
-    .about .about-info .bio-image {
-      border-radius: 10px;
-      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.466); }
     .about .about-info .bio {
       background: #ccc;
       padding: 0.8rem;
       border-radius: 10px;
       border-left: 3px solid #ffbc00;
       border-right: 3px solid #01617b; }
+    .about .about-info .bio-image {
+      border-radius: 10px;
+      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.466); }
 
 .work {
   text-align: center;
@@ -299,8 +299,6 @@ img {
       height: 250px;
       width: 350px;
       margin: 0 auto; }
-    .about .about-info .bio {
-      margin-bottom: 0.5rem; }
   .work .gallery {
     grid-template-columns: 1fr; }
   #main-footer .footer-content {
