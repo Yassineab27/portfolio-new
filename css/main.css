@@ -291,14 +291,17 @@ img {
     grid-template-columns: 1fr; }
   .navbar-header {
     height: 12.5rem; }
-  .about .about-info {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center; }
-    .about .about-info .bio-image {
-      height: 250px;
-      width: 350px;
-      margin: 0 auto; }
+  .about {
+    height: 100%; }
+    .about .about-info {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-content: center;
+      margin-bottom: 2rem; }
+      .about .about-info .bio-image {
+        height: 250px;
+        width: 350px;
+        margin: 0 auto; }
   .work .gallery {
     grid-template-columns: 1fr; }
   #main-footer .footer-content {

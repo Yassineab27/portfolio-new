@@ -229,10 +229,13 @@ img {
   //               ABOUT PAGE
   // =====================================================
   .about {
+    height: 100%;
+
     .about-info {
       display: grid;
       grid-template-columns: 1fr;
       justify-content: center;
+      margin-bottom: 2rem;
 
       .bio-image {
         height: 250px;
